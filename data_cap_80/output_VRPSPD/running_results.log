@@ -1,0 +1,205 @@
+09/06/2025 08:02:48 PM INFO origin_model - __init__: Set parameter LicenseID to value 2686621
+09/06/2025 08:02:48 PM INFO origin_model - _create_variables: var 'variables_x' has been created
+09/06/2025 08:02:48 PM INFO origin_model - _create_variables: var 'variables_u' has been created
+09/06/2025 08:02:48 PM INFO origin_model - _add_visit_constraints: constr 'add_visit_constraints' has been finished
+09/06/2025 08:02:48 PM INFO origin_model - _add_flow_balance: constr 'add_flow_balance' has been finished
+09/06/2025 08:02:48 PM INFO origin_model - _add_depot_constraints: constr 'add_depot_constraints' has been finished
+09/06/2025 08:02:48 PM INFO origin_model - _add_load_consistency: constr 'add_load_consistency' has been finished
+09/06/2025 08:02:48 PM INFO origin_model - _add_capacity_constraints: constr 'add_capacity_constraints' has been finished
+09/06/2025 08:02:48 PM INFO origin_model - _add_initial_load_constraints: constr 'add_initial_load_constraints' has been finished
+09/06/2025 08:02:48 PM INFO origin_model - _add_travel_time_constraints: constr 'add_travel_time_constraints' has been finished
+09/06/2025 08:02:48 PM INFO origin_model - solve: Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
+09/06/2025 08:02:48 PM INFO origin_model - solve: 
+09/06/2025 08:02:48 PM INFO origin_model - solve: CPU model: Intel(R) Core(TM) i5-10200H CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2]
+09/06/2025 08:02:48 PM INFO origin_model - solve: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+09/06/2025 08:02:48 PM INFO origin_model - solve: 
+09/06/2025 08:02:48 PM INFO origin_model - solve: Optimize a model with 203 rows, 111 columns and 927 nonzeros
+09/06/2025 08:02:48 PM INFO origin_model - solve: Model fingerprint: 0x423c0a65
+09/06/2025 08:02:48 PM INFO origin_model - solve: Variable types: 18 continuous, 93 integer (93 binary)
+09/06/2025 08:02:48 PM INFO origin_model - solve: Coefficient statistics:
+09/06/2025 08:02:48 PM INFO origin_model - solve:   Matrix range     [1e+00, 1e+02]
+09/06/2025 08:02:48 PM INFO origin_model - solve:   Objective range  [2e+01, 1e+02]
+09/06/2025 08:02:48 PM INFO origin_model - solve:   Bounds range     [1e+00, 8e+01]
+09/06/2025 08:02:48 PM INFO origin_model - solve:   RHS range        [1e+00, 1e+03]
+09/06/2025 08:02:48 PM INFO origin_model - solve: Presolve removed 21 rows and 0 columns
+09/06/2025 08:02:48 PM INFO origin_model - solve: Presolve time: 0.01s
+09/06/2025 08:02:48 PM INFO origin_model - solve: Presolved: 182 rows, 111 columns, 960 nonzeros
+09/06/2025 08:02:48 PM INFO origin_model - solve: Variable types: 15 continuous, 96 integer (93 binary)
+09/06/2025 08:02:48 PM INFO origin_model - solve: Found heuristic solution: objective 464.0293779
+09/06/2025 08:02:48 PM INFO origin_model - solve: 
+09/06/2025 08:02:48 PM INFO origin_model - solve: Root relaxation: objective 2.537309e+02, 35 iterations, 0.00 seconds (0.00 work units)
+09/06/2025 08:02:48 PM INFO origin_model - solve: 
+09/06/2025 08:02:48 PM INFO origin_model - solve:     Nodes    |    Current Node    |     Objective Bounds      |     Work
+09/06/2025 08:02:48 PM INFO origin_model - solve:  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+09/06/2025 08:02:48 PM INFO origin_model - solve: 
+09/06/2025 08:02:48 PM INFO origin_model - solve:      0     0  253.73090    0    8  464.02938  253.73090  45.3%     -    0s
+09/06/2025 08:02:48 PM INFO origin_model - solve:      0     0  253.86701    0   15  464.02938  253.86701  45.3%     -    0s
+09/06/2025 08:02:48 PM INFO origin_model - solve:      0     0  256.41908    0   12  464.02938  256.41908  44.7%     -    0s
+09/06/2025 08:02:48 PM INFO origin_model - solve:      0     0  290.29718    0   10  464.02938  290.29718  37.4%     -    0s
+09/06/2025 08:02:48 PM INFO origin_model - solve:      0     0  290.29718    0   10  464.02938  290.29718  37.4%     -    0s
+09/06/2025 08:02:48 PM INFO origin_model - solve:      0     0  290.29718    0   10  464.02938  290.29718  37.4%     -    0s
+09/06/2025 08:02:48 PM INFO origin_model - solve:      0     0  290.29718    0   10  464.02938  290.29718  37.4%     -    0s
+09/06/2025 08:02:48 PM INFO origin_model - solve:      0     2  290.41296    0   10  464.02938  290.41296  37.4%     -    0s
+09/06/2025 08:02:48 PM INFO origin_model - solve: 
+09/06/2025 08:02:48 PM INFO origin_model - solve: Cutting planes:
+09/06/2025 08:02:48 PM INFO origin_model - solve:   Gomory: 2
+09/06/2025 08:02:48 PM INFO origin_model - solve:   Cover: 2
+09/06/2025 08:02:48 PM INFO origin_model - solve:   Implied bound: 12
+09/06/2025 08:02:48 PM INFO origin_model - solve:   MIR: 3
+09/06/2025 08:02:48 PM INFO origin_model - solve:   GUB cover: 2
+09/06/2025 08:02:48 PM INFO origin_model - solve:   Inf proof: 1
+09/06/2025 08:02:48 PM INFO origin_model - solve:   RLT: 20
+09/06/2025 08:02:48 PM INFO origin_model - solve: 
+09/06/2025 08:02:48 PM INFO origin_model - solve: Explored 127 nodes (1066 simplex iterations) in 0.11 seconds (0.04 work units)
+09/06/2025 08:02:48 PM INFO origin_model - solve: Thread count was 8 (of 8 available processors)
+09/06/2025 08:02:48 PM INFO origin_model - solve: 
+09/06/2025 08:02:48 PM INFO origin_model - solve: Solution count 1: 464.029 
+09/06/2025 08:02:48 PM INFO origin_model - solve: 
+09/06/2025 08:02:48 PM INFO origin_model - solve: Optimal solution found (tolerance 1.00e-04)
+09/06/2025 08:02:48 PM INFO origin_model - solve: Best objective 4.640293778773e+02, best bound 4.640293778773e+02, gap 0.0000%
+09/06/2025 08:02:48 PM INFO timing - wrapper: 原始模型的求解时长: 0.1227
+09/06/2025 08:02:48 PM INFO launch - <module>: 原始模型中，总成本: 464.03
+09/06/2025 08:02:48 PM INFO launch - <module>: 原始模型中，车辆0路径: 0->2->1->5->0
+09/06/2025 08:02:48 PM INFO launch - <module>: 原始模型中，车辆0的载货量: {0: 58.0, 1: 62.0, 2: 56.0, 3: 0.0, 4: 0.0, 5: 59.0}
+09/06/2025 08:02:48 PM INFO launch - <module>: 原始模型中，车辆1路径: 0->4->3->0
+09/06/2025 08:02:48 PM INFO launch - <module>: 原始模型中，车辆1的载货量: {0: 44.0, 1: 1.0, 2: 0.0, 3: 41.0, 4: 43.0, 5: 0.0}
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: 
+=== Column Generation Iteration 0 ===
+09/06/2025 08:02:48 PM INFO master_model - solve: Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
+09/06/2025 08:02:48 PM INFO master_model - solve: 
+09/06/2025 08:02:48 PM INFO master_model - solve: CPU model: Intel(R) Core(TM) i5-10200H CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2]
+09/06/2025 08:02:48 PM INFO master_model - solve: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+09/06/2025 08:02:48 PM INFO master_model - solve: 
+09/06/2025 08:02:48 PM INFO master_model - solve: Optimize a model with 6 rows, 3 columns and 8 nonzeros
+09/06/2025 08:02:48 PM INFO master_model - solve: Model fingerprint: 0x0998e2e5
+09/06/2025 08:02:48 PM INFO master_model - solve: Coefficient statistics:
+09/06/2025 08:02:48 PM INFO master_model - solve:   Matrix range     [1e+00, 1e+00]
+09/06/2025 08:02:48 PM INFO master_model - solve:   Objective range  [2e+02, 3e+02]
+09/06/2025 08:02:48 PM INFO master_model - solve:   Bounds range     [1e+00, 1e+00]
+09/06/2025 08:02:48 PM INFO master_model - solve:   RHS range        [1e+00, 3e+00]
+09/06/2025 08:02:48 PM INFO master_model - solve: Presolve removed 6 rows and 3 columns
+09/06/2025 08:02:48 PM INFO master_model - solve: Presolve time: 0.00s
+09/06/2025 08:02:48 PM INFO master_model - solve: Presolve: All rows and columns removed
+09/06/2025 08:02:48 PM INFO master_model - solve: Iteration    Objective       Primal Inf.    Dual Inf.      Time
+09/06/2025 08:02:48 PM INFO master_model - solve:        0    7.5300595e+02   0.000000e+00   0.000000e+00      0s
+09/06/2025 08:02:48 PM INFO master_model - solve: 
+09/06/2025 08:02:48 PM INFO master_model - solve: Solved in 0 iterations and 0.00 seconds (0.00 work units)
+09/06/2025 08:02:48 PM INFO master_model - solve: Optimal objective  7.530059538e+02
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 2, 0], Reduced Cost: -145.99
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 2, 1, 0], Reduced Cost: -330.60
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 1, 2, 0], Reduced Cost: -330.60
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 5, 2, 0], Reduced Cost: -113.24
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 2, 3, 0], Reduced Cost: -292.68
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 5, 1, 2, 0], Reduced Cost: -309.35
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 3, 2, 0], Reduced Cost: -292.68
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 5, 2, 1, 0], Reduced Cost: -297.86
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 4, 2, 0], Reduced Cost: -89.58
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 3, 1, 0], Reduced Cost: -135.27
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 3, 2, 1, 0], Reduced Cost: -477.30
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 4, 3, 2, 0], Reduced Cost: -272.31
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 2, 5, 0], Reduced Cost: -113.24
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 4, 2, 1, 0], Reduced Cost: -274.19
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 1, 3, 0], Reduced Cost: -135.27
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 1, 2, 3, 0], Reduced Cost: -477.30
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 5, 2, 3, 0], Reduced Cost: -259.94
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 2, 4, 0], Reduced Cost: -89.58
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 2, 1, 5, 0], Reduced Cost: -309.35
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 3, 1, 2, 0], Reduced Cost: -465.87
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 4, 3, 1, 0], Reduced Cost: -114.90
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 4, 1, 2, 0], Reduced Cost: -264.19
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 2, 3, 4, 0], Reduced Cost: -272.31
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 5, 1, 3, 0], Reduced Cost: -114.01
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 4, 2, 3, 0], Reduced Cost: -236.27
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 1, 2, 4, 0], Reduced Cost: -274.19
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 5, 3, 2, 0], Reduced Cost: -230.59
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 5, 2, 4, 0], Reduced Cost: -56.83
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 3, 2, 5, 0], Reduced Cost: -259.94
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 1, 3, 4, 0], Reduced Cost: -114.90
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 4, 2, 5, 0], Reduced Cost: -56.83
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 5, 2, 3, 4, 0], Reduced Cost: -239.56
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 5, 3, 1, 0], Reduced Cost: -73.18
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 5, 1, 2, 4, 0], Reduced Cost: -252.94
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 3, 1, 5, 0], Reduced Cost: -114.01
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 4, 3, 2, 5, 0], Reduced Cost: -239.56
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 4, 1, 3, 0], Reduced Cost: -68.86
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 4, 2, 1, 5, 0], Reduced Cost: -252.94
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 5, 4, 3, 2, 0], Reduced Cost: -182.73
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 4, 5, 1, 2, 0], Reduced Cost: -194.97
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 5, 2, 4, 3, 0], Reduced Cost: -177.88
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Adding route: [0, 5, 4, 2, 1, 0], Reduced Cost: -184.61
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: 
+=== Column Generation Iteration 1 ===
+09/06/2025 08:02:48 PM INFO master_model - solve: Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
+09/06/2025 08:02:48 PM INFO master_model - solve: 
+09/06/2025 08:02:48 PM INFO master_model - solve: CPU model: Intel(R) Core(TM) i5-10200H CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2]
+09/06/2025 08:02:48 PM INFO master_model - solve: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+09/06/2025 08:02:48 PM INFO master_model - solve: 
+09/06/2025 08:02:48 PM INFO master_model - solve: Optimize a model with 6 rows, 45 columns and 172 nonzeros
+09/06/2025 08:02:48 PM INFO master_model - solve: Coefficient statistics:
+09/06/2025 08:02:48 PM INFO master_model - solve:   Matrix range     [1e+00, 1e+00]
+09/06/2025 08:02:48 PM INFO master_model - solve:   Objective range  [2e+02, 4e+02]
+09/06/2025 08:02:48 PM INFO master_model - solve:   Bounds range     [1e+00, 1e+00]
+09/06/2025 08:02:48 PM INFO master_model - solve:   RHS range        [1e+00, 3e+00]
+09/06/2025 08:02:48 PM INFO master_model - solve: LP warm-start: use basis
+09/06/2025 08:02:48 PM INFO master_model - solve: 
+09/06/2025 08:02:48 PM INFO master_model - solve: Iteration    Objective       Primal Inf.    Dual Inf.      Time
+09/06/2025 08:02:48 PM INFO master_model - solve:        0   -8.4354129e+03   1.030000e+02   0.000000e+00      0s
+09/06/2025 08:02:48 PM INFO master_model - solve:        9    4.1476420e+02   0.000000e+00   0.000000e+00      0s
+09/06/2025 08:02:48 PM INFO master_model - solve: 
+09/06/2025 08:02:48 PM INFO master_model - solve: Solved in 9 iterations and 0.00 seconds (0.00 work units)
+09/06/2025 08:02:48 PM INFO master_model - solve: Optimal objective  4.147641992e+02
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: No new routes found. Terminating.
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: 
+Final solution (Linear Relaxation):
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Route 18: [0, 1, 2, 3, 0], Cost: 275.7103688439757, Lambda: 0.20
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Route 23: [0, 4, 3, 1, 0], Cost: 295.99667159780375, Lambda: 0.20
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Route 26: [0, 5, 1, 3, 0], Cost: 296.8799063091095, Lambda: 0.20
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Route 34: [0, 5, 2, 3, 4, 0], Cost: 299.8906408158407, Lambda: 0.40
+09/06/2025 08:02:48 PM INFO model_manager - run_cg_model: Route 40: [0, 4, 2, 1, 5, 0], Cost: 302.72638390296555, Lambda: 0.40
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: 
+Solving integer solution...
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: 
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: CPU model: Intel(R) Core(TM) i5-10200H CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2]
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: 
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Optimize a model with 6 rows, 45 columns and 172 nonzeros
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Model fingerprint: 0x8aff2fd8
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Variable types: 0 continuous, 45 integer (45 binary)
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Coefficient statistics:
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol:   Matrix range     [1e+00, 1e+00]
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol:   Objective range  [2e+02, 4e+02]
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol:   Bounds range     [1e+00, 1e+00]
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol:   RHS range        [1e+00, 3e+00]
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Found heuristic solution: objective 753.0059538
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Presolve removed 3 rows and 38 columns
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Presolve time: 0.00s
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Presolved: 3 rows, 7 columns, 12 nonzeros
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Found heuristic solution: objective 696.1733121
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Variable types: 0 continuous, 7 integer (7 binary)
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: 
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Root relaxation: objective 4.391210e+02, 4 iterations, 0.00 seconds (0.00 work units)
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: 
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol:     Nodes    |    Current Node    |     Objective Bounds      |     Work
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol:  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: 
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol:      0     0  439.12100    0    3  696.17331  439.12100  36.9%     -    0s
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: H    0     0                     500.0687260  439.12100  12.2%     -    0s
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol:      0     0  439.12100    0    3  500.06873  439.12100  12.2%     -    0s
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: 
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Explored 1 nodes (4 simplex iterations) in 0.00 seconds (0.00 work units)
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Thread count was 8 (of 8 available processors)
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: 
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Solution count 3: 500.069 696.173 753.006 
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: 
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Optimal solution found (tolerance 1.00e-04)
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Best objective 5.000687260397e+02, best bound 5.000687260397e+02, gap 0.0000%
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Integer solution:
+09/06/2025 08:02:48 PM INFO model_manager - get_integer_sol: Total Cost: 500.06872603966974
+09/06/2025 08:02:48 PM INFO timing - wrapper: 列生成后生成整数解的时长: 0.005
+09/06/2025 08:02:48 PM INFO timing - wrapper: 列生成迭代的时长: 0.0239
+09/06/2025 08:02:48 PM INFO launch - <module>: 松弛的cg模型中，总成本: 414.7641992377003
+09/06/2025 08:02:48 PM INFO launch - <module>: 完整的cg模型中，选择路径: {'Route 0': {'cost': 197.34234213670416, 'path': [0, 3, 0]}, 'Route 36': {'cost': 302.72638390296555, 'path': [0, 5, 1, 2, 4, 0]}}
+09/06/2025 08:02:48 PM INFO launch - <module>: 完整的cg模型中，总成本: 500.06872603966974
+09/06/2025 08:02:48 PM INFO launch - <module>: success
+09/06/2025 08:02:48 PM INFO launch - <module>: Total running time:0.17552947998046875
