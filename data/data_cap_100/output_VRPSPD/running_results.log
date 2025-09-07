@@ -1,0 +1,341 @@
+03/28/2025 06:31:45 PM INFO origin_model - __init__: Restricted license - for non-production use only - expires 2025-11-24
+03/28/2025 06:31:45 PM INFO origin_model - _create_variables: var 'variables_x' has been created
+03/28/2025 06:31:45 PM INFO origin_model - _create_variables: var 'variables_u' has been created
+03/28/2025 06:31:45 PM INFO origin_model - _add_visit_constraints: constr 'add_visit_constraints' has been finished
+03/28/2025 06:31:45 PM INFO origin_model - _add_flow_balance: constr 'add_flow_balance' has been finished
+03/28/2025 06:31:45 PM INFO origin_model - _add_depot_constraints: constr 'add_depot_constraints' has been finished
+03/28/2025 06:31:45 PM INFO origin_model - _add_load_consistency: constr 'add_load_consistency' has been finished
+03/28/2025 06:31:45 PM INFO origin_model - _add_capacity_constraints: constr 'add_capacity_constraints' has been finished
+03/28/2025 06:31:45 PM INFO origin_model - _add_initial_load_constraints: constr 'add_initial_load_constraints' has been finished
+03/28/2025 06:31:45 PM INFO origin_model - solve: Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows 10.0 (19045.2))
+03/28/2025 06:31:45 PM INFO origin_model - solve: 
+03/28/2025 06:31:45 PM INFO origin_model - solve: CPU model: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
+03/28/2025 06:31:45 PM INFO origin_model - solve: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+03/28/2025 06:31:45 PM INFO origin_model - solve: 
+03/28/2025 06:31:45 PM INFO origin_model - solve: Optimize a model with 200 rows, 111 columns and 837 nonzeros
+03/28/2025 06:31:45 PM INFO origin_model - solve: Model fingerprint: 0x4b3be95b
+03/28/2025 06:31:45 PM INFO origin_model - solve: Variable types: 18 continuous, 93 integer (93 binary)
+03/28/2025 06:31:45 PM INFO origin_model - solve: Coefficient statistics:
+03/28/2025 06:31:45 PM INFO origin_model - solve:   Matrix range     [1e+00, 1e+02]
+03/28/2025 06:31:45 PM INFO origin_model - solve:   Objective range  [2e+01, 1e+02]
+03/28/2025 06:31:45 PM INFO origin_model - solve:   Bounds range     [1e+00, 1e+02]
+03/28/2025 06:31:45 PM INFO origin_model - solve:   RHS range        [1e+00, 1e+02]
+03/28/2025 06:31:45 PM INFO origin_model - solve: Presolve removed 18 rows and 0 columns
+03/28/2025 06:31:45 PM INFO origin_model - solve: Presolve time: 0.01s
+03/28/2025 06:31:45 PM INFO origin_model - solve: Presolved: 182 rows, 111 columns, 960 nonzeros
+03/28/2025 06:31:45 PM INFO origin_model - solve: Variable types: 15 continuous, 96 integer (93 binary)
+03/28/2025 06:31:45 PM INFO origin_model - solve: Found heuristic solution: objective 464.0293779
+03/28/2025 06:31:45 PM INFO origin_model - solve: 
+03/28/2025 06:31:45 PM INFO origin_model - solve: Root relaxation: objective 2.537309e+02, 34 iterations, 0.00 seconds (0.00 work units)
+03/28/2025 06:31:45 PM INFO origin_model - solve: 
+03/28/2025 06:31:45 PM INFO origin_model - solve:     Nodes    |    Current Node    |     Objective Bounds      |     Work
+03/28/2025 06:31:45 PM INFO origin_model - solve:  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+03/28/2025 06:31:45 PM INFO origin_model - solve: 
+03/28/2025 06:31:45 PM INFO origin_model - solve:      0     0  253.73090    0    8  464.02938  253.73090  45.3%     -    0s
+03/28/2025 06:31:45 PM INFO origin_model - solve:      0     0  254.27940    0   15  464.02938  254.27940  45.2%     -    0s
+03/28/2025 06:31:45 PM INFO origin_model - solve:      0     0  256.41908    0   12  464.02938  256.41908  44.7%     -    0s
+03/28/2025 06:31:45 PM INFO origin_model - solve: H    0     0                     438.3866507  290.29718  33.8%     -    0s
+03/28/2025 06:31:45 PM INFO origin_model - solve:      0     0  290.29718    0   10  438.38665  290.29718  33.8%     -    0s
+03/28/2025 06:31:45 PM INFO origin_model - solve: H    0     0                     412.7010977  290.29718  29.7%     -    0s
+03/28/2025 06:31:45 PM INFO origin_model - solve:      0     0  290.29718    0   12  412.70110  290.29718  29.7%     -    0s
+03/28/2025 06:31:45 PM INFO origin_model - solve:      0     0  290.29718    0   15  412.70110  290.29718  29.7%     -    0s
+03/28/2025 06:31:45 PM INFO origin_model - solve:      0     0  290.29718    0   15  412.70110  290.29718  29.7%     -    0s
+03/28/2025 06:31:45 PM INFO origin_model - solve:      0     0  290.29718    0   10  412.70110  290.29718  29.7%     -    0s
+03/28/2025 06:31:45 PM INFO origin_model - solve:      0     0  290.29718    0   10  412.70110  290.29718  29.7%     -    0s
+03/28/2025 06:31:45 PM INFO origin_model - solve:      0     2  291.44434    0   10  412.70110  291.44434  29.4%     -    0s
+03/28/2025 06:31:45 PM INFO origin_model - solve: 
+03/28/2025 06:31:45 PM INFO origin_model - solve: Cutting planes:
+03/28/2025 06:31:45 PM INFO origin_model - solve:   Gomory: 4
+03/28/2025 06:31:45 PM INFO origin_model - solve:   Implied bound: 7
+03/28/2025 06:31:45 PM INFO origin_model - solve:   MIR: 7
+03/28/2025 06:31:45 PM INFO origin_model - solve:   GUB cover: 1
+03/28/2025 06:31:45 PM INFO origin_model - solve:   RLT: 18
+03/28/2025 06:31:45 PM INFO origin_model - solve: 
+03/28/2025 06:31:45 PM INFO origin_model - solve: Explored 111 nodes (1011 simplex iterations) in 0.15 seconds (0.05 work units)
+03/28/2025 06:31:45 PM INFO origin_model - solve: Thread count was 8 (of 8 available processors)
+03/28/2025 06:31:45 PM INFO origin_model - solve: 
+03/28/2025 06:31:45 PM INFO origin_model - solve: Solution count 3: 412.701 438.387 464.029 
+03/28/2025 06:31:45 PM INFO origin_model - solve: 
+03/28/2025 06:31:45 PM INFO origin_model - solve: Optimal solution found (tolerance 1.00e-04)
+03/28/2025 06:31:45 PM INFO origin_model - solve: Best objective 4.127010976856e+02, best bound 4.127010976856e+02, gap 0.0000%
+03/28/2025 06:31:45 PM INFO launch - <module>: 原始模型中，总成本: 412.70
+03/28/2025 06:31:45 PM INFO launch - <module>: 原始模型中，车辆0路径: 0->5->0
+03/28/2025 06:31:45 PM INFO launch - <module>: 原始模型中，车辆0的载货量: {0: 22.0, 1: 1.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 19.0}
+03/28/2025 06:31:45 PM INFO launch - <module>: 原始模型中，车辆2路径: 0->1->2->3->4->0
+03/28/2025 06:31:45 PM INFO launch - <module>: 原始模型中，车辆2的载货量: {0: 80.0, 1: 86.0, 2: 84.0, 3: 82.0, 4: 81.0, 5: 0.0}
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: current iteration: 0
+03/28/2025 06:31:45 PM INFO master_model - solve: Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows 10.0 (19045.2))
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: CPU model: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
+03/28/2025 06:31:45 PM INFO master_model - solve: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimize a model with 6 rows, 4 columns and 9 nonzeros
+03/28/2025 06:31:45 PM INFO master_model - solve: Model fingerprint: 0x07396f19
+03/28/2025 06:31:45 PM INFO master_model - solve: Coefficient statistics:
+03/28/2025 06:31:45 PM INFO master_model - solve:   Matrix range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Objective range  [2e+02, 3e+02]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Bounds range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   RHS range        [1e+00, 3e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve: Presolve removed 6 rows and 4 columns
+03/28/2025 06:31:45 PM INFO master_model - solve: Presolve time: 0.00s
+03/28/2025 06:31:45 PM INFO master_model - solve: Presolve: All rows and columns removed
+03/28/2025 06:31:45 PM INFO master_model - solve: Iteration    Objective       Primal Inf.    Dual Inf.      Time
+03/28/2025 06:31:45 PM INFO master_model - solve:        0    7.0274798e+02   0.000000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Solved in 0 iterations and 0.00 seconds (0.00 work units)
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimal objective  7.027479787e+02
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_x' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_u' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _add_flow_balance: constr 'add_flow_balance' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_depot_constraints: constr 'add_depot_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_load_consistency: constr 'add_load_consistency' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_capacity_constraints: constr 'add_capacity_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_initial_load_constraints: constr 'add_initial_load_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_visit_limit_constr: constr 'visit_limit_' has been finished
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: Adding new route: [0, 4, 2, 1, 0], Reduced Cost: -421.28
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: current iteration: 1
+03/28/2025 06:31:45 PM INFO master_model - solve: Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows 10.0 (19045.2))
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: CPU model: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
+03/28/2025 06:31:45 PM INFO master_model - solve: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimize a model with 6 rows, 5 columns and 13 nonzeros
+03/28/2025 06:31:45 PM INFO master_model - solve: Coefficient statistics:
+03/28/2025 06:31:45 PM INFO master_model - solve:   Matrix range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Objective range  [2e+02, 3e+02]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Bounds range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   RHS range        [1e+00, 3e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve: LP warm-start: use basis
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Iteration    Objective       Primal Inf.    Dual Inf.      Time
+03/28/2025 06:31:45 PM INFO master_model - solve:        0    2.8147146e+02   2.000000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve:        1    7.0274798e+02   0.000000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Solved in 1 iterations and 0.00 seconds (0.00 work units)
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimal objective  7.027479787e+02
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_x' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_u' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _add_flow_balance: constr 'add_flow_balance' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_depot_constraints: constr 'add_depot_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_load_consistency: constr 'add_load_consistency' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_capacity_constraints: constr 'add_capacity_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_initial_load_constraints: constr 'add_initial_load_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_visit_limit_constr: constr 'visit_limit_' has been finished
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: Adding new route: [0, 2, 3, 4, 0], Reduced Cost: -581.26
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: current iteration: 2
+03/28/2025 06:31:45 PM INFO master_model - solve: Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows 10.0 (19045.2))
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: CPU model: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
+03/28/2025 06:31:45 PM INFO master_model - solve: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimize a model with 6 rows, 6 columns and 17 nonzeros
+03/28/2025 06:31:45 PM INFO master_model - solve: Coefficient statistics:
+03/28/2025 06:31:45 PM INFO master_model - solve:   Matrix range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Objective range  [2e+02, 3e+02]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Bounds range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   RHS range        [1e+00, 3e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve: LP warm-start: use basis
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Iteration    Objective       Primal Inf.    Dual Inf.      Time
+03/28/2025 06:31:45 PM INFO master_model - solve:        0    1.2149251e+02   4.000000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve:        1    7.0274798e+02   0.000000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Solved in 1 iterations and 0.00 seconds (0.00 work units)
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimal objective  7.027479787e+02
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_x' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_u' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _add_flow_balance: constr 'add_flow_balance' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_depot_constraints: constr 'add_depot_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_load_consistency: constr 'add_load_consistency' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_capacity_constraints: constr 'add_capacity_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_initial_load_constraints: constr 'add_initial_load_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_visit_limit_constr: constr 'visit_limit_' has been finished
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: Adding new route: [0, 5, 1, 2, 3, 0], Reduced Cost: -465.41
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: current iteration: 3
+03/28/2025 06:31:45 PM INFO master_model - solve: Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows 10.0 (19045.2))
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: CPU model: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
+03/28/2025 06:31:45 PM INFO master_model - solve: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimize a model with 6 rows, 7 columns and 22 nonzeros
+03/28/2025 06:31:45 PM INFO master_model - solve: Coefficient statistics:
+03/28/2025 06:31:45 PM INFO master_model - solve:   Matrix range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Objective range  [2e+02, 3e+02]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Bounds range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   RHS range        [1e+00, 3e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve: LP warm-start: use basis
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Iteration    Objective       Primal Inf.    Dual Inf.      Time
+03/28/2025 06:31:45 PM INFO master_model - solve:        0    2.3733815e+02   1.500000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve:        1    4.7004306e+02   0.000000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Solved in 1 iterations and 0.00 seconds (0.00 work units)
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimal objective  4.700430635e+02
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_x' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_u' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _add_flow_balance: constr 'add_flow_balance' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_depot_constraints: constr 'add_depot_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_load_consistency: constr 'add_load_consistency' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_capacity_constraints: constr 'add_capacity_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_initial_load_constraints: constr 'add_initial_load_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_visit_limit_constr: constr 'visit_limit_' has been finished
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: Adding new route: [0, 5, 1, 3, 4, 0], Reduced Cost: -189.37
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: current iteration: 4
+03/28/2025 06:31:45 PM INFO master_model - solve: Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows 10.0 (19045.2))
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: CPU model: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
+03/28/2025 06:31:45 PM INFO master_model - solve: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimize a model with 6 rows, 8 columns and 27 nonzeros
+03/28/2025 06:31:45 PM INFO master_model - solve: Coefficient statistics:
+03/28/2025 06:31:45 PM INFO master_model - solve:   Matrix range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Objective range  [2e+02, 3e+02]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Bounds range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   RHS range        [1e+00, 3e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve: LP warm-start: use basis
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Iteration    Objective       Primal Inf.    Dual Inf.      Time
+03/28/2025 06:31:45 PM INFO master_model - solve:        0    2.8066909e+02   1.250000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve:        1    4.2269957e+02   0.000000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Solved in 1 iterations and 0.00 seconds (0.00 work units)
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimal objective  4.226995708e+02
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_x' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_u' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _add_flow_balance: constr 'add_flow_balance' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_depot_constraints: constr 'add_depot_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_load_consistency: constr 'add_load_consistency' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_capacity_constraints: constr 'add_capacity_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_initial_load_constraints: constr 'add_initial_load_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_visit_limit_constr: constr 'visit_limit_' has been finished
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: Adding new route: [0, 4, 2, 1, 5, 0], Reduced Cost: -84.01
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: current iteration: 5
+03/28/2025 06:31:45 PM INFO master_model - solve: Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows 10.0 (19045.2))
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: CPU model: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
+03/28/2025 06:31:45 PM INFO master_model - solve: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimize a model with 6 rows, 9 columns and 32 nonzeros
+03/28/2025 06:31:45 PM INFO master_model - solve: Coefficient statistics:
+03/28/2025 06:31:45 PM INFO master_model - solve:   Matrix range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Objective range  [2e+02, 3e+02]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Bounds range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   RHS range        [1e+00, 3e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve: LP warm-start: use basis
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Iteration    Objective       Primal Inf.    Dual Inf.      Time
+03/28/2025 06:31:45 PM INFO master_model - solve:        0    3.3868819e+02   1.000000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve:        1    3.9469578e+02   0.000000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Solved in 1 iterations and 0.00 seconds (0.00 work units)
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimal objective  3.946957757e+02
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_x' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_u' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _add_flow_balance: constr 'add_flow_balance' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_depot_constraints: constr 'add_depot_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_load_consistency: constr 'add_load_consistency' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_capacity_constraints: constr 'add_capacity_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_initial_load_constraints: constr 'add_initial_load_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_visit_limit_constr: constr 'visit_limit_' has been finished
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: Adding new route: [0, 4, 3, 2, 1, 0], Reduced Cost: -77.36
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: current iteration: 6
+03/28/2025 06:31:45 PM INFO master_model - solve: Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows 10.0 (19045.2))
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: CPU model: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
+03/28/2025 06:31:45 PM INFO master_model - solve: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimize a model with 6 rows, 10 columns and 37 nonzeros
+03/28/2025 06:31:45 PM INFO master_model - solve: Coefficient statistics:
+03/28/2025 06:31:45 PM INFO master_model - solve:   Matrix range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Objective range  [2e+02, 3e+02]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Bounds range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   RHS range        [1e+00, 3e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve: LP warm-start: use basis
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Iteration    Objective       Primal Inf.    Dual Inf.      Time
+03/28/2025 06:31:45 PM INFO master_model - solve:        0    3.1733699e+02   1.000000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve:        1    3.9469578e+02   0.000000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Solved in 1 iterations and 0.00 seconds (0.00 work units)
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimal objective  3.946957757e+02
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_x' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_u' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _add_flow_balance: constr 'add_flow_balance' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_depot_constraints: constr 'add_depot_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_load_consistency: constr 'add_load_consistency' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_capacity_constraints: constr 'add_capacity_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_initial_load_constraints: constr 'add_initial_load_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_visit_limit_constr: constr 'visit_limit_' has been finished
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: Adding new route: [0, 4, 3, 2, 5, 0], Reduced Cost: -65.87
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: current iteration: 7
+03/28/2025 06:31:45 PM INFO master_model - solve: Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows 10.0 (19045.2))
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: CPU model: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
+03/28/2025 06:31:45 PM INFO master_model - solve: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimize a model with 6 rows, 11 columns and 42 nonzeros
+03/28/2025 06:31:45 PM INFO master_model - solve: Coefficient statistics:
+03/28/2025 06:31:45 PM INFO master_model - solve:   Matrix range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Objective range  [2e+02, 3e+02]
+03/28/2025 06:31:45 PM INFO master_model - solve:   Bounds range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve:   RHS range        [1e+00, 3e+00]
+03/28/2025 06:31:45 PM INFO master_model - solve: LP warm-start: use basis
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Iteration    Objective       Primal Inf.    Dual Inf.      Time
+03/28/2025 06:31:45 PM INFO master_model - solve:        0    3.2882865e+02   1.000000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve:        1    3.7822899e+02   0.000000e+00   0.000000e+00      0s
+03/28/2025 06:31:45 PM INFO master_model - solve: 
+03/28/2025 06:31:45 PM INFO master_model - solve: Solved in 1 iterations and 0.00 seconds (0.00 work units)
+03/28/2025 06:31:45 PM INFO master_model - solve: Optimal objective  3.782289941e+02
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_x' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _create_variables: var 'variables_u' has been created
+03/28/2025 06:31:45 PM INFO sub_model - _add_flow_balance: constr 'add_flow_balance' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_depot_constraints: constr 'add_depot_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_load_consistency: constr 'add_load_consistency' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_capacity_constraints: constr 'add_capacity_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_initial_load_constraints: constr 'add_initial_load_constraints' has been finished
+03/28/2025 06:31:45 PM INFO sub_model - _add_visit_limit_constr: constr 'visit_limit_' has been finished
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: No improving route found. Terminating.
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: 
+Final solution (Linear Relaxation):
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: Route 6: [0, 5, 1, 2, 3, 0], Cost: 296.9652944999624, Lambda: 0.25
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: Route 7: [0, 5, 1, 3, 4, 0], Cost: 317.25159725379046, Lambda: 0.25
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: Route 8: [0, 4, 2, 1, 5, 0], Cost: 302.72638390296555, Lambda: 0.25
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: Route 9: [0, 4, 3, 2, 1, 0], Cost: 296.0820597886567, Lambda: 0.25
+03/28/2025 06:31:45 PM INFO model_manager - run_cg_model: Route 10: [0, 4, 3, 2, 5, 0], Cost: 299.8906408158407, Lambda: 0.25
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: 
+Solving integer solution...
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Gurobi Optimizer version 11.0.3 build v11.0.3rc0 (win64 - Windows 10.0 (19045.2))
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: 
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: CPU model: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, instruction set [SSE2|AVX|AVX2]
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: 
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Optimize a model with 6 rows, 11 columns and 42 nonzeros
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Model fingerprint: 0xa3366c20
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Variable types: 0 continuous, 11 integer (11 binary)
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Coefficient statistics:
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol:   Matrix range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol:   Objective range  [2e+02, 3e+02]
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol:   Bounds range     [1e+00, 1e+00]
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol:   RHS range        [1e+00, 3e+00]
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Found heuristic solution: objective 702.7479787
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Presolve removed 6 rows and 11 columns
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Presolve time: 0.00s
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Presolve: All rows and columns removed
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: 
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Thread count was 1 (of 8 available processors)
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: 
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Solution count 2: 513.374 702.748 
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: 
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Optimal solution found (tolerance 1.00e-04)
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Best objective 5.133740080079e+02, best bound 5.133740080079e+02, gap 0.0000%
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Integer solution:
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Route 3: [0, 2, 0], Cost: 196.1224107541002
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Route 7: [0, 5, 1, 3, 4, 0], Cost: 317.25159725379046
+03/28/2025 06:31:45 PM INFO model_manager - get_integer_sol: Total Cost: 513.3740080078907
+03/28/2025 06:31:45 PM INFO launch - <module>: 松弛的cg模型中，总成本: 378.228994065304
+03/28/2025 06:31:45 PM INFO launch - <module>: 完整的cg模型中，总成本: 513.3740080078907
+03/28/2025 06:31:45 PM INFO launch - <module>: 完整的cg模型中，路线: [{'path': [0], 'cost': 0}, {'path': [0, 3, 1, 0], 'cost': 275.6249806531228}, {'path': [0, 5, 4, 0], 'cost': 231.00058733896344}, {'path': [0, 2, 0], 'cost': 196.1224107541002}, {'path': [0, 4, 2, 1, 0], 'cost': 281.47145824697884, 'reduced_cost': -421.2765204992076}, {'path': [0, 2, 3, 4, 0], 'cost': 267.14405140287033, 'reduced_cost': -581.2554671894009}, {'path': [0, 5, 1, 2, 3, 0], 'cost': 296.9652944999624, 'reduced_cost': -465.40983050196104}, {'path': [0, 5, 1, 3, 4, 0], 'cost': 317.25159725379046, 'reduced_cost': -189.37397073829578}, {'path': [0, 4, 2, 1, 5, 0], 'cost': 302.72638390296555, 'reduced_cost': -84.01138537230715}, {'path': [0, 4, 3, 2, 1, 0], 'cost': 296.0820597886567, 'reduced_cost': -77.3587902418862}, {'path': [0, 4, 3, 2, 5, 0], 'cost': 299.8906408158407, 'reduced_cost': -65.8671264849025}]
+03/28/2025 06:31:45 PM INFO launch - <module>: success
+03/28/2025 06:31:45 PM INFO launch - <module>: Total running time:0.37067127227783203
