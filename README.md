@@ -21,9 +21,8 @@
 | `output_VRPSPD` | 存放求解过程与结果的日志文件：<br>- `gurobi_log.log`：Gurobi求解器的运行日志；<br>- `running_results.log`：程序整体运行日志。 |
 | `visualize` | 存放可视化结果文件：<br>- `cg_iterations.gif`：列生成迭代过程的动态可视化；<br>- `Customer Locations.png`：客户服务点分布的静态可视化；<br>- `Vehicle Routes--CG.png`：列生成算法得到的车辆路径可视化；<br>- `Vehicle Routes--OM.png`：直接用Gurobi求解原模型得到的车辆路径可视化。 |
 | `customerinfo.csv` | 记录客户的原始数据（如位置、需求等信息）。 |
-| `vehicleinfo.csv` | 记录车辆的原始数据（如容量、数量等信息）。 |
-| `origin_model.lp` | Gurobi直接求解的**原问题模型**（LP格式文件）。 |
-| `model.lp` | 列生成算法构建的**主问题模型**（LP格式文件）。 |
+| `vehicleinfo.csv` | 记录车辆的原始数据（如容量、数量等信息）。 ||
+| `model.lp` | Gurobi直接求解的**原问题模型**（LP格式文件）。 |
 | `status.csv` | 输出程序的运行状态：`0`代表开始运行，`1`代表成功运行，`-1`代表运行失败。 |
 
 ### `source` 文件夹

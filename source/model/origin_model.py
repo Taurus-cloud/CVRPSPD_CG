@@ -215,7 +215,6 @@ class OriginModel:
     def solve(self):
         """求解"""
         self.model.update()  # 必须更新模型
-        self.model.write("origin_model.lp")  # 导出模型文件
         self.model.optimize()
 
         if self.model.status == GRB.OPTIMAL:
