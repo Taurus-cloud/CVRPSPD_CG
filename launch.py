@@ -1,6 +1,7 @@
 import time
 import gurobipy as gp
 from gurobipy import GRB
+from gurobipy import setParam
 from source.info.input_data import InputData
 from source.info.config import Config
 from source.model.model_manager import ModelManager
@@ -11,6 +12,11 @@ import logging
 
 
 if __name__ == "__main__":
+    # 设置Gurobi参数
+    setParam("LogFile", "gurobi_log.log")  # 指定日志文件
+    setParam("OutputFlag", 1)  # 允许输出（1=开启，0=完全关闭）
+    setParam("LogToConsole", 0)  # 禁止控制台输出（只写入文件）
+
     # 初始路径：每个客户单独成一条路径
     config = Config()
     input_data = InputData()
@@ -18,9 +24,6 @@ if __name__ == "__main__":
     status.out_status(0)
     st = time.time()
     try:
-        input_data = InputData()
-        # input_data.generate_data()
-
         # 初始化模型
         origin_model = OriginModel(input_data=input_data)
         origin_model.initialize()
