@@ -8,6 +8,9 @@ from source.model.model_manager import ModelManager
 from source.model.origin_model import OriginModel
 from source.result.processor import ResultProcessor
 from source.utils import log, status
+from source.visual.origin_routes_visual import OriginRoutesVisualization
+from source.visual.cg_routes_visual import CgRoutesVisualization
+from source.visual.iteration_routes_visual import IterationVisualization
 import logging
 
 
@@ -24,6 +27,9 @@ if __name__ == "__main__":
     status.out_status(0)
     st = time.time()
     try:
+        # 调用 visualize_customers 方法来可视化客户数据
+        input_data.visualize_customers()
+
         # 初始化模型
         origin_model = OriginModel(input_data=input_data)
         origin_model.initialize()
@@ -33,6 +39,10 @@ if __name__ == "__main__":
         for k, path in origin_solution['routes'].items():
             logging.info(f"原始模型中，车辆{k}路径: {'->'.join(map(str, path))}")
             logging.info(f"原始模型中，车辆{k}的载货量: {origin_solution['loads'][k]}")
+
+        # 可视化原始模型的客户点和车辆路径
+        visualization = OriginRoutesVisualization(input_data, origin_model)
+        visualization.visualize_routes()
 
         model_manager = ModelManager(input_data=input_data)
         model_manager.run_cg_model()
@@ -50,6 +60,19 @@ if __name__ == "__main__":
         logging.info("Total running time:{}".format((time.time() - st)))
 
         status.out_status(1)
+
+        # 可视化Cg模型的客户点和车辆路径
+        visualization = CgRoutesVisualization(input_data=input_data, model_manager=model_manager)
+        visualization.visualize_routes()
+
+        # 添加迭代可视化
+        iter_visual = IterationVisualization(input_data=input_data, model_manager=model_manager)
+        # 保存迭代动画为GIF文件
+        iter_visual.save_animation(f"{config.output_visual}cg_iterations.gif")
+        # 也可以选择保存每次迭代的单独图片
+        #iter_visual.visualize_all_iterations()
+
+
 
     except Exception as e:
         logging.exception(e)

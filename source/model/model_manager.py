@@ -16,6 +16,7 @@ class ModelManager:
                  ):
         self.input_data = input_data
         self.initial_sol = InitialSol(input_data=self.input_data)
+        self.iteration_routes = []  # 用于记录每次迭代的路径集合(为了迭代可视化)
 
     @timing.record_time_decorator(task_name="列生成后生成整数解的时长")
     def get_integer_sol(self, rmp):
@@ -39,6 +40,9 @@ class ModelManager:
         self.rmp = RestrictedMasterProblem(initial_routes=self.initial_sol.initial_routes,
                                       input_data=self.input_data)
 
+        # 记录初始路径集合(为了迭代可视化)
+        self.iteration_routes.append(self.rmp.routes.copy())
+
         # 列生成迭代
         iteration = 0
         while True:
@@ -59,6 +63,7 @@ class ModelManager:
                 break
 
             # 4. 过滤并添加新路径到主问题
+            routes_added = False # (为了迭代可视化)
             for route in feasible_routes:
                 # 检查路径是否已存在（避免重复添加）
                 if self.rmp.is_route_exist(route['path']):
@@ -71,6 +76,12 @@ class ModelManager:
                         f"Reduced Cost: {route['reduced_cost']:.2f}"
                     )
                     self.rmp.add_route(route)
+                    routes_added = True# (为了迭代可视化)
+
+            # (为了迭代可视化)
+            if routes_added:
+                # 只有在添加了新路径时才记录当前迭代的路径集合
+                self.iteration_routes.append(self.rmp.routes.copy())
 
             iteration += 1
 

@@ -1,5 +1,5 @@
 
-Gurobi 12.0.1 (win64) logging started Sun Sep  7 17:37:55 2025
+Gurobi 12.0.1 (win64) logging started Sun Sep  7 18:38:42 2025
 
 Set parameter LogFile to value "gurobi_log.log"
 Set parameter OutputFlag to value 1
@@ -49,7 +49,44 @@ Cutting planes:
   Inf proof: 1
   RLT: 20
 
-Explored 127 nodes (1066 simplex iterations) in 0.09 seconds (0.04 work units)
+Explored 127 nodes (1066 simplex iterations) in 0.07 seconds (0.04 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 464.029 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.640293778773e+02, best bound 4.640293778773e+02, gap 0.0000%
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
+
+CPU model: Intel(R) Core(TM) i5-10200H CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Non-default parameters:
+LogToConsole  0
+
+Optimize a model with 203 rows, 111 columns and 927 nonzeros
+Model fingerprint: 0x423c0a65
+Variable types: 18 continuous, 93 integer (93 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+02]
+  Objective range  [2e+01, 1e+02]
+  Bounds range     [1e+00, 8e+01]
+  RHS range        [1e+00, 1e+03]
+Presolved: 182 rows, 111 columns, 960 nonzeros
+
+Continuing optimization...
+
+
+Cutting planes:
+  Gomory: 2
+  Cover: 2
+  Implied bound: 12
+  MIR: 3
+  GUB cover: 2
+  Inf proof: 1
+  RLT: 20
+
+Explored 127 nodes (1066 simplex iterations) in 0.00 seconds (0.00 work units)
 Thread count was 8 (of 8 available processors)
 
 Solution count 1: 464.029 
@@ -140,87 +177,6 @@ Solution count 3: 500.069 696.173 753.006
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 5.000687260397e+02, best bound 5.000687260397e+02, gap 0.0000%
-
-Gurobi 12.0.1 (win64) logging started Sun Sep  7 17:43:15 2025
-
-Set parameter LogFile to value "gurobi_log.log"
-Set parameter OutputFlag to value 1
-Set parameter LogToConsole to value 0
-Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-
-CPU model: Intel(R) Core(TM) i5-10200H CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2]
-Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-
-Non-default parameters:
-LogToConsole  0
-
-Optimize a model with 203 rows, 111 columns and 927 nonzeros
-Model fingerprint: 0x423c0a65
-Variable types: 18 continuous, 93 integer (93 binary)
-Coefficient statistics:
-  Matrix range     [1e+00, 1e+02]
-  Objective range  [2e+01, 1e+02]
-  Bounds range     [1e+00, 8e+01]
-  RHS range        [1e+00, 1e+03]
-Presolve removed 21 rows and 0 columns
-Presolve time: 0.00s
-Presolved: 182 rows, 111 columns, 960 nonzeros
-Variable types: 15 continuous, 96 integer (93 binary)
-Found heuristic solution: objective 464.0293779
-
-Root relaxation: objective 2.537309e+02, 35 iterations, 0.00 seconds (0.00 work units)
-
-    Nodes    |    Current Node    |     Objective Bounds      |     Work
- Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
-
-     0     0  253.73090    0    8  464.02938  253.73090  45.3%     -    0s
-     0     0  253.86701    0   15  464.02938  253.86701  45.3%     -    0s
-     0     0  256.41908    0   12  464.02938  256.41908  44.7%     -    0s
-     0     0  290.29718    0   10  464.02938  290.29718  37.4%     -    0s
-     0     0  290.29718    0   10  464.02938  290.29718  37.4%     -    0s
-     0     0  290.29718    0   10  464.02938  290.29718  37.4%     -    0s
-     0     0  290.29718    0   10  464.02938  290.29718  37.4%     -    0s
-     0     2  290.41296    0   10  464.02938  290.41296  37.4%     -    0s
-
-Cutting planes:
-  Gomory: 2
-  Cover: 2
-  Implied bound: 12
-  MIR: 3
-  GUB cover: 2
-  Inf proof: 1
-  RLT: 20
-
-Explored 127 nodes (1066 simplex iterations) in 0.08 seconds (0.04 work units)
-Thread count was 8 (of 8 available processors)
-
-Solution count 1: 464.029 
-
-Optimal solution found (tolerance 1.00e-04)
-Best objective 4.640293778773e+02, best bound 4.640293778773e+02, gap 0.0000%
-Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
-
-CPU model: Intel(R) Core(TM) i5-10200H CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2]
-Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
-
-Non-default parameters:
-LogToConsole  0
-
-Optimize a model with 6 rows, 3 columns and 8 nonzeros
-Model fingerprint: 0x0998e2e5
-Coefficient statistics:
-  Matrix range     [1e+00, 1e+00]
-  Objective range  [2e+02, 3e+02]
-  Bounds range     [1e+00, 1e+00]
-  RHS range        [1e+00, 3e+00]
-Presolve removed 6 rows and 3 columns
-Presolve time: 0.00s
-Presolve: All rows and columns removed
-Iteration    Objective       Primal Inf.    Dual Inf.      Time
-       0    7.5300595e+02   0.000000e+00   0.000000e+00      0s
-
-Solved in 0 iterations and 0.00 seconds (0.00 work units)
-Optimal objective  7.530059538e+02
 Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
 
 CPU model: Intel(R) Core(TM) i5-10200H CPU @ 2.40GHz, instruction set [SSE2|AVX|AVX2]
@@ -230,18 +186,21 @@ Non-default parameters:
 LogToConsole  0
 
 Optimize a model with 6 rows, 45 columns and 172 nonzeros
+Model fingerprint: 0xa14294b2
 Coefficient statistics:
   Matrix range     [1e+00, 1e+00]
   Objective range  [2e+02, 4e+02]
   Bounds range     [1e+00, 1e+00]
   RHS range        [1e+00, 3e+00]
-LP warm-start: use basis
+Presolve removed 0 rows and 27 columns
+Presolve time: 0.00s
+Presolved: 6 rows, 18 columns, 63 nonzeros
 
 Iteration    Objective       Primal Inf.    Dual Inf.      Time
-       0   -8.4354129e+03   1.030000e+02   0.000000e+00      0s
-       9    4.1476420e+02   0.000000e+00   0.000000e+00      0s
+       0    2.2886900e+02   3.000000e+00   0.000000e+00      0s
+       6    4.1476420e+02   0.000000e+00   0.000000e+00      0s
 
-Solved in 9 iterations and 0.00 seconds (0.00 work units)
+Solved in 6 iterations and 0.00 seconds (0.00 work units)
 Optimal objective  4.147641992e+02
 Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows 10.0 (19045.2))
 
@@ -252,7 +211,7 @@ Non-default parameters:
 LogToConsole  0
 
 Optimize a model with 6 rows, 45 columns and 172 nonzeros
-Model fingerprint: 0x8aff2fd8
+Model fingerprint: 0x69b9a943
 Variable types: 0 continuous, 45 integer (45 binary)
 Coefficient statistics:
   Matrix range     [1e+00, 1e+00]
@@ -261,7 +220,7 @@ Coefficient statistics:
   RHS range        [1e+00, 3e+00]
 Found heuristic solution: objective 753.0059538
 Presolve removed 3 rows and 38 columns
-Presolve time: 0.01s
+Presolve time: 0.00s
 Presolved: 3 rows, 7 columns, 12 nonzeros
 Found heuristic solution: objective 696.1733121
 Variable types: 0 continuous, 7 integer (7 binary)
@@ -275,7 +234,7 @@ Root relaxation: objective 4.391210e+02, 4 iterations, 0.00 seconds (0.00 work u
 H    0     0                     500.0687260  439.12100  12.2%     -    0s
      0     0  439.12100    0    3  500.06873  439.12100  12.2%     -    0s
 
-Explored 1 nodes (4 simplex iterations) in 0.01 seconds (0.00 work units)
+Explored 1 nodes (4 simplex iterations) in 0.00 seconds (0.00 work units)
 Thread count was 8 (of 8 available processors)
 
 Solution count 3: 500.069 696.173 753.006 
