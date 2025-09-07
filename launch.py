@@ -15,13 +15,13 @@ import logging
 
 
 if __name__ == "__main__":
+    config = Config()
     # 设置Gurobi参数
-    setParam("LogFile", "gurobi_log.log")  # 指定日志文件
+    setParam("LogFile", f"{config.output_folder}gurobi_log.log")  # 指定日志文件
     setParam("OutputFlag", 1)  # 允许输出（1=开启，0=完全关闭）
     setParam("LogToConsole", 0)  # 禁止控制台输出（只写入文件）
 
     # 初始路径：每个客户单独成一条路径
-    config = Config()
     input_data = InputData()
     logger = log.setup_log(config.output_folder)
     status.out_status(0)
