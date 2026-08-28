@@ -1,71 +1,78 @@
-# README
+# CVRPSPD Column Generation Solver
 
-## 项目介绍
-本项目旨在解决**同时考虑取送货的车辆路径问题（VRPSPD）**，采用列生成（Column Generation）算法结合labeling来求解该组合优化问题。通过模块化的代码架构，实现了数据处理、模型构建、求解计算与结果可视化等完整流程。
+An educational implementation for the **Vehicle Routing Problem with Simultaneous Pickup and Delivery (VRPSPD)**. The solver combines a direct Gurobi model with a column-generation workflow based on a restricted master problem and labeling-based pricing.
 
-## 项目架构与文件功能
+![Column-generation route visualization](data/data_cap_80/visualize/Vehicle%20Routes--CG.png)
 
-### 根目录文件
-| 文件/文件夹 | 功能描述 |
-| --- | --- |
-| `data` | 存放不同车辆容量下的输入数据，以车辆容量（如`data_cap_80`、`data_cap_90`等）为子文件夹进行细分，每个子文件夹包含该容量场景下的所有相关数据与输出结果。 |
-| `source` | 项目核心代码目录，包含数据处理、模型构建、工具类、可视化等所有代码模块。 |
-| `_Standard VRPSPD-列生成尝试.pdf` | 对VRPSPD问题模型及列生成算法的详细介绍文档，可帮助理解算法原理与模型设计。 |
-| `launch.py` | 程序启动文件，执行该文件可启动整个VRPSPD求解流程。**调用程序前，请先将工作目录切换到`data_cap_xx`（如`data_cap_80`）**。 |
+## Overview
 
-### `data` 文件夹（以 `data_cap_xx` 为例）
-`data` 文件夹按车辆容量细分出多个子文件夹（如 `data_cap_80`、`data_cap_90` 等），每个子文件夹下又包含以下内容：
+The repository models routes that must satisfy customer coverage, vehicle-count, capacity, pickup, delivery, and service-time considerations. It provides both a direct optimization model and a decomposition-style route-generation workflow for studying their behavior on the included small instances.
 
-| 文件/文件夹 | 功能描述 |
-| --- | --- |
-| `output_VRPSPD` | 存放求解过程与结果的日志文件：<br>- `gurobi_log.log`：Gurobi求解器的运行日志；<br>- `running_results.log`：程序整体运行日志。 |
-| `visualize` | 存放可视化结果文件：<br>- `cg_iterations.gif`：列生成迭代过程的动态可视化；<br>- `Customer Locations.png`：客户服务点分布的静态可视化；<br>- `Vehicle Routes--CG.png`：列生成算法得到的车辆路径可视化；<br>- `Vehicle Routes--OM.png`：直接用Gurobi求解原模型得到的车辆路径可视化。 |
-| `customerinfo.csv` | 记录客户的原始数据（如位置、需求等信息）。 |
-| `vehicleinfo.csv` | 记录车辆的原始数据（如容量、数量等信息）。 ||
-| `model.lp` | Gurobi直接求解的**原问题模型**（LP格式文件）。 |
-| `status.csv` | 输出程序的运行状态：`0`代表开始运行，`1`代表成功运行，`-1`代表运行失败。 |
+## Problem Definition
 
-### `source` 文件夹
-`source` 是核心代码目录，包含以下子模块：
+Each route starts and ends at the depot. A feasible solution selects routes that cover every customer while respecting vehicle capacity and route-level operational constraints. Pickup and delivery quantities are tracked during label extension.
 
-#### `do` 子文件夹
-| 文件 | 功能描述 |
-| --- | --- |
-| `customer.py` | 定义**客户类**，封装客户相关属性（如位置、需求等）。 |
-| `vehicle.py` | 定义**车辆类**，封装车辆相关属性（如容量、数量等）。 |
+## Mathematical Components
 
-#### `info` 子文件夹
-| 文件 | 功能描述 |
-| --- | --- |
-| `config.py` | 配置文件，管理文件的读入路径与输出路径，实现路径的统一配置与管理。 |
-| `input_data.py` | 数据读取与预处理类，包含以下核心方法：<br>- 从CSV文件加载客户和车辆数据；<br>- 计算所有客户点之间的欧氏距离；<br>- 可视化客户数据；<br>- 获取客户点的坐标。 |
+### Direct model
 
-#### `model` 子文件夹
-| 文件 | 功能描述 |
-| --- | --- |
-| `origin_model.py` | 直接调用Gurobi求解器的**原问题模型**，用于对比列生成算法的效果。 |
-| `initial_sol.py` | 为列生成算法生成**初始解**，是列生成迭代的起点。 |
-| `master_model.py` | 列生成算法的**主问题（Master Problem）**模型，负责整合子问题生成的有效列并求解。 |
-| `sub_model.py` | 列生成算法的**子问题（Sub Problem）**模型，负责生成能改进主问题解的有效列。 |
-| `model_manager.py` | 列生成算法的**模型管理器**，控制主问题与子问题之间的信息传递与迭代流程。 |
+`source/model/origin_model.py` builds a Gurobi formulation of the original routing model. It is used as a reference implementation for the included instances.
 
-#### `result` 子文件夹
-| 文件 | 功能描述 |
-| --- | --- |
-| `processor.py` | 为后续结果输出预留的接口文件，目前暂未使用。 |
+### Restricted Master Problem
 
-#### `utils` 子文件夹
-| 文件 | 功能描述 |
-| --- | --- |
-| `constant.py` | 管理项目中用到的**常数**（如默认参数、固定标识等）。 |
-| `filename.py` | 管理项目中涉及的各类**文件名**（如输入输出文件的命名规则）。 |
-| `log.py` | 管理**日志文件**的生成与写入，记录程序运行过程中的关键信息。 |
-| `status.py` | 管理程序**运行状态的输出**，与`status.csv`的生成逻辑相关。 |
-| `timing.py` | 计算并记录程序**求解时间**，用于性能分析。 |
+`source/model/master_model.py` maintains a route pool with continuous route-selection variables, customer-coverage constraints, and a vehicle-count constraint. After column generation terminates, the code resolves the route-selection model with binary variables.
 
-#### `visual` 子文件夹
-| 文件 | 功能描述 |
-| --- | --- |
-| `cg_routes_visual.py` | 对**列生成算法得到的车辆路径**进行可视化（对应`Vehicle Routes--CG.png`）。 |
-| `iteration_routes_visual.py` | 对**列生成迭代过程**进行可视化（对应`cg_iterations.gif`）。 |
-| `origin_routes_visual.py` | 对**直接用Gurobi求解原模型得到的车辆路径**进行可视化（对应`Vehicle Routes--OM.png`）。 |
+### Pricing Problem and Labeling
+
+`source/model/sub_model.py` extends labels that record route state, including the visited set, elapsed time, pickup/delivery load, and accumulated cost. Dominance rules prune inferior labels, and routes with negative reduced cost are returned to the master problem.
+
+## Algorithm Flow
+
+```mermaid
+flowchart LR
+    A[Input data] --> B[Initial route pool]
+    B --> C[Restricted master problem]
+    C --> D[Dual values]
+    D --> E[Labeling-based pricing]
+    E -->|Negative reduced-cost routes| C
+    E -->|No improving route| F[Binary route selection]
+```
+
+## Existing Run Artifacts
+
+The repository includes route plots, a column-generation GIF, LP exports, and log files for the `data_cap_80`, `90`, `100`, `150`, and `200` folders.
+
+One archived `data_cap_80` run recorded an integer route-selection objective of `500.07` and an end-to-end runtime of `1.77 s`. The repository also records direct-model outcomes, but the two paths have not been validated as an apples-to-apples benchmark. For that reason, this README does not claim a solution-quality gap or performance advantage.
+
+![Column-generation iterations](data/data_cap_80/visualize/cg_iterations.gif)
+
+## Quick Start
+
+Requires Python, Gurobi, and an active Gurobi license.
+
+```bash
+python -m pip install -r requirements.txt
+cd data/data_cap_80
+python ../../launch.py
+```
+
+The runner writes logs and visual outputs relative to the selected `data_cap_*` working directory.
+
+## Repository Structure
+
+```text
+data/                 # included instances, logs, LP exports, and visuals
+source/do/            # customer and vehicle objects
+source/info/          # data loading and working-directory configuration
+source/model/         # direct model, RMP, pricing, and CG manager
+source/visual/        # route and iteration visualization
+launch.py             # run entry point
+```
+
+## References
+
+`_Standard CVRPSPD-列生成尝试.pdf` contains the repository's accompanying problem and method notes.
+
+## License
+
+No license has been added yet. Do not reuse or redistribute the code until a license is explicitly provided.
